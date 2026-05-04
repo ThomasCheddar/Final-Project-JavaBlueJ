@@ -10,16 +10,16 @@ public class GameLibrary
 {
     // instance variables - replace the example below with your own
     private int x;
-    private Game game;
-    private ArrayList<String>g;
+    //private Game game;
+    private ArrayList<Game>games;
     
     public GameLibrary()
     {
         // initialise instance variables
-        g = new ArrayList<>();
+        games = new ArrayList<>();
     }
     public void addGame(Game game){
-        
+    
     }
     public void listAllGames(){
         

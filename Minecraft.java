@@ -13,11 +13,7 @@ public class Minecraft extends Game
     /**
      * Constructor for objects of class Minecraft
      */
-    public Minecraft()
-    {
-        // initialise instance variables
-        x = 0;
-    }
+    
 
     /**
      * An example of a method - replace this comment with your own
