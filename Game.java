@@ -13,25 +13,23 @@ public class Game
     private Platform platform;
     private AgeRating ageRating;
     private GameType gameType;
+    private double playTime;
+    private int rating;
     
-    /**
-     * Constructor for objects of class Game
-     */
-    public Game()
+    public Game(String title, Genre genre, Platform platform, AgeRating ageRating, GameType gameType)
     {
-        // initialise instance variables
-        x = 0;
+        
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public void setRating(int rating){
+        
+    }
+    public void addPlayTime(double minutes){
+        
+    }
+    public boolean matches(String word){
+        
+    }
+    public String toString(){
+        
     }
 }

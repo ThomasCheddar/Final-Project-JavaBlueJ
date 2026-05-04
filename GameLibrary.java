@@ -18,5 +18,25 @@ public class GameLibrary
         // initialise instance variables
         g = new ArrayList<>();
     }
-    
+    public void addGame(Game game){
+        
+    }
+    public void listAllGames(){
+        
+    }
+    public void searchGames(String word){
+        
+    }
+    public void listTopRatedGames(){
+        
+    }
+    public void rateGame(String title, int rating){
+        
+    }
+    public void startSession(String title, double minutes){
+        
+    }
+    public void printLibraryDetails(){
+        
+    }
 }
