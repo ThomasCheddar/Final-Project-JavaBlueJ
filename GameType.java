@@ -1,9 +1,8 @@
 
 /**
- * Enumeration class GameType - write a description of the enum class here
- *
- * @author (your name here)
- * @version (version number or date here)
+ * What kind of game is it?
+ * thomas
+ * may 4
  */
 public enum GameType
 {

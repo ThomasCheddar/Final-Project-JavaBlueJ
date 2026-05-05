@@ -1,27 +1,28 @@
 
 /**
- * Write a description of class GameLibraryApp here.
+ * This class can be interactif by texting it
  *
- * @author (your name)
- * @version (a version number or a date)
+ * Thomas
+ * May 4
  */
 public class GameLibraryApp
 {
-    // instance variables - replace the example below with your own
-    private int x;
-    private GameLibrary gameLibrary;
+    private GameLibrary library;
 
     /**
      * Constructor for objects of class GameLibraryApp
      */
-    public GameLibraryApp()
+    public GameLibraryApp() // make an app with a sample of this class
+    {
+        library = new GameLibrary();
+        library.addGame(new Game("Minecraft", Genre.ADVENTURE, Platform.PC, AgeRating.EVERYONE, GameType.MULTIPLAYER));
+    }
+    public static void main(String[]args) //main method when running the code
     {
         
     }
-    public void main(String[]args){
-        
-    }
-    public void run(){
+    public void run() // probably gonna put a text to let people know that its active
+    {
         
     }
 }

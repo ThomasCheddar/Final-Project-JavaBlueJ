@@ -1,9 +1,9 @@
 
 /**
- * Enumeration class Genre - write a description of the enum class here
+ * This is the game's genre
  *
- * @author (your name here)
- * @version (version number or date here)
+ * thomas)
+ * may 4 
  */
 public enum Genre
 {

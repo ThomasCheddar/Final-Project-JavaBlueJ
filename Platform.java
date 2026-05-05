@@ -1,9 +1,9 @@
 
 /**
- * Enumeration class Platform - write a description of the enum class here
+ * What kind of electrinoc does this game support?
  *
- * @author (your name here)
- * @version (version number or date here)
+ * nicoals
+ * 04/05/26
  */
 public enum Platform
 {

@@ -1,18 +1,13 @@
 
 /**
- * Write a description of class Minecraft here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * Nicolas is doing this 
+ *Making a sample but realizing this wont be good
+ * Will remove later in the process
+ * 04/05/26
  */
-public class Minecraft extends Game
+public class Minecraft extends Game // this is a subclass
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Minecraft
-     */
+    
     
 
     /**

@@ -1,9 +1,8 @@
 
 /**
- * Enumeration class AgeRating - write a description of the enum class here
- *
- * @author (your name here)
- * @version (version number or date here)
+ * What age can play this game
+ * nicoals
+ * 04/05/26
  */
 public enum AgeRating
 {

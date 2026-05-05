@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Game here.
+ *This is a  game that has the info that hols the game
  *
- * @author (your name)
- * @version (a version number or a date)
+ *Nicolas is doing this
+ * 04/05/26
  */
 public class Game
 {
@@ -17,19 +17,23 @@ public class Game
     private int rating;
     
     public Game(String title, Genre genre, Platform platform, AgeRating ageRating, GameType gameType)
+    { 
+        //When creating a game, it would ask for a title, genre, platform, age rates and game type
+    }
+    public void setRating(int rating)
     {
-        
+        // Setting a rate to a game and it must be 1-5
     }
-    public void setRating(int rating){
-        
+    public void addPlayTime(double minutes)
+    {
+        // adding playtime either in hours or minutes
     }
-    public void addPlayTime(double minutes){
-        
+    public boolean matches(String word)
+    {
+        // used to search for a game by using boolean
     }
-    public boolean matches(String word){
-        
-    }
-    public String toString(){
-    
+    public String toString()
+    {
+        // return the info in text
     }
 }
