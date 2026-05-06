@@ -2,7 +2,7 @@
 /**
  * This class can be interactif by texting it
  *
- * Thomas
+ * Thomas is struggling again
  * May 4
  */
 public class GameLibraryApp

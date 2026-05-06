@@ -31,9 +31,11 @@ public class Game
     public boolean matches(String word)
     {
         // used to search for a game by using boolean
+        return true;
     }
     public String toString()
     {
         // return the info in text
+        return "true";
     }
 }

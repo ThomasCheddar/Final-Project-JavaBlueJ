@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  * This class is a game library that can store games
@@ -12,42 +13,52 @@ public class GameLibrary
     private int x;
     //private Game game;
     private ArrayList<Game>games;
-    
+
     public GameLibrary() //Creates an empty class of game
     {
         // initialise instance variables
         games = new ArrayList<>();
     }
-    public void addGame(Game game) // add a game to this class
-    { 
-    
-    }
+
     public int getNumberOfGames() // Gives a number of game
     {
-        
+        return 0;
     }
+
     public void listAllGames() // list all games that is in this class
     {
-        
+
     }
+
     public void searchGames(String word) // search for a game
     {
-        
+
     }
+
     public void listTopRatedGames() // List game with the highest rating
     {
-        
+
     }
-    public void rateGame(String title, int rating) //rate game by using title
+
+    public boolean rateGame(String title, int rating) //rate game by using title
     {
-        
+        Scanner myObj = new Scanner(System.in);
+        System.out.println("Your rating ");
+        String rateGame = myObj.nextLine();
+        if (rating < 1 && rating > 5){
+            System.out.println("Error, invalid rating, must be between 1 to 5.");
+            return false;
+        }
+        else
+        if (rating > 1 && rating < 5){  
+            return true;
+        }
+        System.out.println("Your rating: " + rateGame);
+        return true;
     }
-    public void startSession(String title, double minutes) //starting a game by adding time
-    {
-        
-    }
+
     public void printLibraryDetails()// print info about library
     {
-        
+
     }
 }
