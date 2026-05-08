@@ -110,15 +110,24 @@ public class Game
             System.out.println("Minutes must be a positive number");
         }
     }
-    
-    public boolean equals()
+
+    // chekc if two games are the same.
+    // two games are the same if they have the same title.
+    // other is refred to another object in game
+    // if both game has the same title then return true but else false
+    //Speical thanks to Illia and Jonas for helping me understanding and recommending to implement instanceof
+    public boolean equals(Object other)
     {
-        return true;
+        if(other instanceof Game) {
+            Game otherGame = (Game) other;
+            return title.equalsIgnoreCase(otherGame.getTitle());
+        }
+        return false;
     }
 
     public String toString()
     {
         // return the info in text
-        return title;
+        return title + " | " + genre + " | " + platform + " | "+ ageRating + " | " + gameType + " | Rating: "+ rating + "/5 | Play time: " + playTime + " minutes";
     }
 }
