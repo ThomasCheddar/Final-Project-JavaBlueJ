@@ -17,6 +17,7 @@ public class GameLibrary
         // initialise the list of game
         games = new ArrayList<>();
     }
+
     public void addGame(Game game)
     {
         //add game by putting name of the game
@@ -37,10 +38,6 @@ public class GameLibrary
 
     }
 
-    public void listTopRatedGames() // List game with the highest rating
-    {
-
-    }
 
     public boolean rateGame(String title, int rating) //rate game by using title
     {
