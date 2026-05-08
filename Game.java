@@ -8,7 +8,6 @@
 public class Game
 {
     // instance variables - replace the example below with your own
-    private int x;
     private String title;
     private Genre genre;
     private Platform platform;
@@ -19,6 +18,7 @@ public class Game
 
     public Game(String title, Genre genre, Platform platform, AgeRating ageRating, GameType gameType)
     { 
+        //This is for ONE GAME
         //When creating a game, it would ask for a title, genre, platform, age rates and game type
         this.title = title;
         this.genre = genre;
@@ -92,16 +92,33 @@ public class Game
     public void setRating(int rating)
     {
         // Setting a rate to a game and it must be 1-5
+        if(rating >= 1 && rating <=5)
+        {
+            this.rating = rating;
+        } else {
+            System.out.println("Rating must be between 1 to 5");
+        }
     }
 
     public void addPlayTime(double minutes)
     {
-        // adding playtime either in hours or minutes
+        // adding playtime TO ONE GAME
+        if(minutes > 0)
+        {
+            playTime = playTime + minutes;
+        } else {
+            System.out.println("Minutes must be a positive number");
+        }
+    }
+    
+    public boolean equals()
+    {
+        return true;
     }
 
     public String toString()
     {
         // return the info in text
-        return "true";
+        return title;
     }
 }

@@ -9,20 +9,22 @@ import java.util.Scanner;
  */
 public class GameLibrary
 {
-    // instance variables - replace the example below with your own
-    private int x;
     //private Game game;
     private ArrayList<Game>games;
 
     public GameLibrary() //Creates an empty class of game
     {
-        // initialise instance variables
+        // initialise the list of game
         games = new ArrayList<>();
+    }
+    public void addGame(Game game)
+    {
+        //add game by putting name of the game
     }
 
     public int getNumberOfGames() // Gives a number of game
     {
-        return 0;
+        return games.size();
     }
 
     public void listAllGames() // list all games that is in this class
