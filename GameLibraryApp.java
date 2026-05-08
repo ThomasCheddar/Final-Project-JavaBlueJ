@@ -15,7 +15,7 @@ public class GameLibraryApp
     public GameLibraryApp() // make an app with a sample of this class
     {
         library = new GameLibrary();
-        library.addGame(new Game("Minecraft", Genre.ADVENTURE, Platform.PC, AgeRating.EVERYONE, GameType.MULTIPLAYER));
+        //library.addGame(new Game("Minecraft", Genre.ADVENTURE, Platform.PC, AgeRating.EVERYONE, GameType.MULTIPLAYER));
     }
     public static void main(String[]args) //main method when running the code
     {
