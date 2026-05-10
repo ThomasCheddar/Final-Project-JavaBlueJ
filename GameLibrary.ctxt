@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=GameLibrary
-comment0.text=\n\ This\ class\ is\ a\ game\ library\ that\ can\ store\ games\n\n\ Thomas\ is\ taking\ this\ class\n\ May\ 4\n
+comment0.text=\r\n\ This\ class\ is\ a\ game\ library\ that\ can\ store\ games\r\n\r\n\ Thomas\ is\ taking\ this\ class\r\n\ May\ 4\r\n
 comment1.params=
 comment1.target=GameLibrary()
 comment2.params=game
@@ -11,8 +11,10 @@ comment4.params=
 comment4.target=void\ listAllGames()
 comment5.params=word
 comment5.target=void\ searchGames(java.lang.String)
-comment6.params=title\ rating
-comment6.target=boolean\ rateGame(java.lang.String,\ int)
-comment7.params=
-comment7.target=void\ printLibraryDetails()
-numComments=8
+comment6.params=
+comment6.target=void\ listTopRatedGames()
+comment7.params=title\ rating
+comment7.target=boolean\ rateGame(java.lang.String,\ int)
+comment8.params=
+comment8.target=void\ printLibraryDetails()
+numComments=9

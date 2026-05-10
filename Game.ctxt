@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Game
-comment0.text=\nThis\ is\ a\ \ game\ that\ has\ the\ info\ that\ hols\ the\ game\n\nNicolas\ is\ doing\ this\n\ 04/05/26\n
+comment0.text=\r\nThis\ is\ a\ \ game\ that\ has\ the\ info\ that\ hols\ the\ game\r\n\r\nNicolas\ is\ doing\ this\r\n\ 04/05/26\r\n
 comment1.params=title\ genre\ platform\ ageRating\ gameType
 comment1.target=Game(java.lang.String,\ Genre,\ Platform,\ AgeRating,\ GameType)
 comment10.params=genre
@@ -15,8 +15,8 @@ comment14.params=rating
 comment14.target=void\ setRating(int)
 comment15.params=minutes
 comment15.target=void\ addPlayTime(double)
-comment16.params=other
-comment16.target=boolean\ equals(java.lang.Object)
+comment16.params=
+comment16.target=boolean\ equals()
 comment17.params=
 comment17.target=java.lang.String\ toString()
 comment2.params=

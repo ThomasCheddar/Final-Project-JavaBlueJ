@@ -17,7 +17,6 @@ public class GameLibrary
         // initialise the list of game
         games = new ArrayList<>();
     }
-
     public void addGame(Game game)
     {
         //add game by putting name of the game
@@ -30,7 +29,9 @@ public class GameLibrary
 
     public void listAllGames() // list all games that is in this class
     {
-
+        for(Game game : games){
+            System.out.println(game);
+        }
     }
 
     public void searchGames(String word) // search for a game
@@ -38,11 +39,14 @@ public class GameLibrary
 
     }
 
+    public void listTopRatedGames() // List game with the highest rating
+    {
+
+    }
 
     public boolean rateGame(String title, int rating) //rate game by using title
     {
         Scanner myObj = new Scanner(System.in);
-        System.out.println("Your rating ");
         String rateGame = myObj.nextLine();
         if (rating < 1 && rating > 5){
             System.out.println("Error, invalid rating, must be between 1 to 5.");
@@ -52,12 +56,12 @@ public class GameLibrary
         if (rating > 1 && rating < 5){  
             return true;
         }
-        System.out.println("Your rating: " + rateGame);
+        System.out.println("Your rating: " + rating);
         return true;
     }
 
     public void printLibraryDetails()// print info about library
     {
-
+        System.out.println("Number of games: " + games.size());
     }
 }
