@@ -17,7 +17,12 @@ public class GameLibraryApp
         library.addGame(new Game("Counter Strike: Global Offensive", Genre.ACTION, Platform.PC, AgeRating.MATURE, GameType.MULTIPLAYER));
         
     }
-
+    
+    public static void Main(String[] args)
+    {
+        System.out.println("weird choice");
+    }
+    
     public void run()
     {
         library.printLibraryDetails();

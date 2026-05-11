@@ -15,6 +15,7 @@ public class GameLibrary
         games = new ArrayList<Game>();
     }
 
+    
     public void addGame(Game game)
     {
         if(game !=null)

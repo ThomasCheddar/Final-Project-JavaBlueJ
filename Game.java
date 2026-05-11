@@ -73,7 +73,7 @@ public class Game
     public String toString()
     {
         return title + " | " + genre + " | " + platform + " | "
-            + ageRating + " | " + gameType + " | Rating: "
-            + rating + "/5 | Play time: " + playTime + " minutes";
+        + ageRating + " | " + gameType + " | Rating: "
+        + rating + "/5 | Play time: " + playTime + " minutes";
     }
 }
