@@ -17,7 +17,7 @@ HOW TO START THIS PROJECT:
 1. Open BlueJ
 2. Click the compile button
 3. Right-click the GameLibraryApp class.
-4. Choose void main(String[] args).
+4. Create an instance of a class
 5. Click OK
 6. Output will appear in the terminal
 

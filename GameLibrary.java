@@ -17,12 +17,17 @@ public class GameLibrary
 
     public void addGame(Game game)
     {
-        
+        if(game !=null)
+        {
+            games.add(game);
+        }
     }
 
     public void listAllGames()
     {
-        
+        for(Game game : games){
+            System.out.println(game);
+        }
     }
 
     public void rateGame(String title, int rating)
@@ -39,7 +44,12 @@ public class GameLibrary
 
     public void startSession(String title, double minutes)
     {
-        
+        Game game = findGame(title);
+        if(game != null){
+            game.addPlayTime(minutes);
+        }
+        else
+            System.out.println("Game not found.");
     }
 
     public void printLibraryDetails()
@@ -49,7 +59,9 @@ public class GameLibrary
 
     public void printSessionLog()
     {
-        
+        for(Game game : games){
+            System.out.println(game.getTitle() + " : " + game.getPlayTime() + " minutes");
+        }
     }
 
     private Game findGame(String title)
@@ -59,13 +71,12 @@ public class GameLibrary
                 return game;
             }
         }
-
         return null;
     }
 
 
     public String toString()
     {
-       return "test";
+       return "Game library with " + games.size() + "games.";
     }
 }

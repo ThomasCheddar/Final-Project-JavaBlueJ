@@ -35,12 +35,6 @@ public class GameLibraryApp
         library.printSessionLog();
     }
 
-    public static void main(String[] args)
-    {
-        GameLibraryApp app = new GameLibraryApp();
-        app.run();
-    }
-
     public GameLibrary getLibrary()
     {
         return library;
