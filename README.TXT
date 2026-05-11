@@ -19,9 +19,8 @@ HOW TO START THIS PROJECT:
 6. Type a number from the menu and press Enter.
 
 AUTHORS:    
-Nicolas - Game class
-Thonas - GameLibrary class
-Nicolas and Thomas - GameLibraryApp and enumerations
+Nicolas - GameLibraryApp, Game and GameLibrary
+Thonas -  GameLibrary and enumerations
 
 USER INSTRUCTIONS: 
 When the program starts, choose an option by typing a number.

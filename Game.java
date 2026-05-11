@@ -1,7 +1,7 @@
 /**
  * Represents one game in the game library.
  *
- * @author Nicolas and Thomas
+ * @author Nicolas
  * @version 04/05/26
  */
 public class Game
