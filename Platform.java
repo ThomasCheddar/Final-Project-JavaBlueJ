@@ -2,7 +2,7 @@
 /**
  * What kind of electrinoc does this game support?
  *
- * nicoals
+ * Thomas
  * 04/05/26
  */
 public enum Platform

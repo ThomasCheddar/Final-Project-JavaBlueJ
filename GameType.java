@@ -1,8 +1,8 @@
 
 /**
- * What kind of game is it?
- * thomas
- * may 4
+ * The game's GameType
+ * Thomas
+ * 04/05/26
  */
 public enum GameType
 {

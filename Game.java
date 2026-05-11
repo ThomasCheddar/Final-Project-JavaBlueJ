@@ -1,25 +1,21 @@
-
 /**
- *This is a  game that has the info that hols the game
+ * Represents one game in the game library.
  *
- *Nicolas is doing this
- * 04/05/26
+ * @author Nicolas and Thomas
+ * @version 04/05/26
  */
 public class Game
 {
-    // instance variables - replace the example below with your own
     private String title;
     private Genre genre;
     private Platform platform;
     private AgeRating ageRating;
     private GameType gameType;
-    private double playTime;
     private int rating;
+    private double playTime;
 
     public Game(String title, Genre genre, Platform platform, AgeRating ageRating, GameType gameType)
-    { 
-        //This is for ONE GAME
-        //When creating a game, it would ask for a title, genre, platform, age rates and game type
+    {
         this.title = title;
         this.genre = genre;
         this.platform = platform;
@@ -34,26 +30,6 @@ public class Game
         return title;
     }
 
-    public Genre getGenre()
-    {
-        return genre;
-    }
-
-    public Platform getPlatform()
-    {
-        return platform;
-    }
-
-    public AgeRating getAgeRating()
-    {
-        return ageRating;
-    }
-
-    public GameType getGameType()
-    {
-        return gameType;
-    }
-
     public int getRating()
     {
         return rating;
@@ -64,56 +40,26 @@ public class Game
         return playTime;
     }
 
-    public void setTitle(String title)
-    {
-        this.title = title;
-    }
-
-    public void setGenre(Genre genre)
-    {
-        this.genre = genre;
-    }
-
-    public void setPlatform(Platform platform)
-    {
-        this.platform = platform;
-    }
-
-    public void setAgeRating(AgeRating ageRating)
-    {
-        this.ageRating = ageRating;
-    }
-
-    public void setGameType(GameType gameType)
-    {
-        this.gameType = gameType;
-    }
-
     public void setRating(int rating)
     {
-        // Setting a rate to a game and it must be 1-5
-        if(rating >= 1 && rating <=5)
-        {
+        if(rating >= 1 && rating <= 5) {
             this.rating = rating;
-        } else {
-            System.out.println("Rating must be between 1 to 5");
+        }
+        else {
+            System.out.println("Rating must be between 1 and 5.");
         }
     }
 
     public void addPlayTime(double minutes)
     {
-        // adding playtime TO ONE GAME
-        if(minutes > 0)
-        {
+        if(minutes > 0) {
             playTime = playTime + minutes;
-        } else {
-            System.out.println("Minutes must be a positive number");
+        }
+        else {
+            System.out.println("Minutes must be positive.");
         }
     }
-    //Special thanks to Illia and Jonas (5th semester guy) for explaining and helping me implementing the instanceof keyword
-    //equals is used to check if the game has the exact same name and only return true of false bc it is a boolean
-    //PS I thought I commited it but it did not... odd...
-    //PS PS They are the goat
+
     public boolean equals(Object other)
     {
         if(other instanceof Game) {
@@ -126,7 +72,8 @@ public class Game
 
     public String toString()
     {
-        // return the info in text
-        return title + " | " + genre + " | " + platform + " | " + ageRating + " | " + gameType + " | Rating: " + rating + "/5 | Play time: " + playTime + " minutes";
+        return title + " | " + genre + " | " + platform + " | "
+            + ageRating + " | " + gameType + " | Rating: "
+            + rating + "/5 | Play time: " + playTime + " minutes";
     }
 }

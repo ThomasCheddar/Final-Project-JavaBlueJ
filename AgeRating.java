@@ -1,7 +1,7 @@
 
 /**
- * What age can play this game
- * nicoals
+ * The game's Age Rating
+ * Thomas 
  * 04/05/26
  */
 public enum AgeRating

@@ -2,8 +2,8 @@
 /**
  * This is the game's genre
  *
- * thomas)
- * may 4 
+ * Thomas
+ * 04/05/26 
  */
 public enum Genre
 {
