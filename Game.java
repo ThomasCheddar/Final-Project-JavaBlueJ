@@ -110,15 +110,23 @@ public class Game
             System.out.println("Minutes must be a positive number");
         }
     }
-    
-    public boolean equals()
+    //Special thanks to Illia and Jonas (5th semester guy) for explaining and helping me implementing the instanceof keyword
+    //equals is used to check if the game has the exact same name and only return true of false bc it is a boolean
+    //PS I thought I commited it but it did not... odd...
+    //PS PS They are the goat
+    public boolean equals(Object other)
     {
-        return true;
+        if(other instanceof Game) {
+            Game otherGame = (Game) other;
+            return title.equals(otherGame.getTitle());
+        }
+
+        return false;
     }
 
     public String toString()
     {
         // return the info in text
-        return title;
+        return title + " | " + genre + " | " + platform + " | " + ageRating + " | " + gameType + " | Rating: " + rating + "/5 | Play time: " + playTime + " minutes";
     }
 }
