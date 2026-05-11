@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Game
-comment0.text=\n\ Represents\ one\ game\ in\ the\ game\ library.\n\n\ @author\ Nicolas\ and\ Thomas\n\ @version\ 04/05/26\n
+comment0.text=\n\ Represents\ one\ game\ in\ the\ game\ library.\n\n\ @author\ Nicolas\n\ @version\ 04/05/26\n
 comment1.params=title\ genre\ platform\ ageRating\ gameType
 comment1.target=Game(java.lang.String,\ Genre,\ Platform,\ AgeRating,\ GameType)
 comment2.params=

@@ -4,36 +4,29 @@ Tell the reader (someone who does not know anything about this project)
 all they need to know. The comments should usually include at least:
 ------------------------------------------------------------------------
 
-PROJECT TITLE: Game Library
+PROJECT TITLE: 
+Final Project JavaBlueJ
 
-PURPOSE OF PROJECT: This project is a text-mode game library application. It allows the user to store games, list all games, search games, rate games, start a game session, print the session log, and print basic library details.
+PURPOSE OF PROJECT: 
+It is to create a simple game library.
+The program stores game in the library, list the game, rate a game, add play time to a game, and print library details.
 
 VERSION or DATE: 04/05/26
 
 HOW TO START THIS PROJECT:  
-1. Open the project in BlueJ.
-2. Click Compile to compile all classes.
+1. Open BlueJ
+2. Click the compile button
 3. Right-click the GameLibraryApp class.
-4. Select void main(String[] args).
-5. The menu will appear in the BlueJ terminal.
-6. Type a number from the menu and press Enter.
+4. Choose void main(String[] args).
+5. Click OK
+6. Output will appear in the terminal
 
 AUTHORS:    
 Nicolas - GameLibraryApp, Game and GameLibrary
 Thonas -  GameLibrary and enumerations
 
 USER INSTRUCTIONS: 
-When the program starts, choose an option by typing a number.
-1. Print library details
-2. List all games
-3. Search games
-4. List top-rated games
-5. Print game details
-6. Rate a game
-7. Start a game session
-8. Print game session log
-9. Add your own game
-0. Exit
-For rating a game, enter a number from 1 to 5.
-For starting a game session, enter the number of minutes played.
-For adding a game, follow the instructions in the terminal and type the requested information.
+When the program starts, it will create a sample game library with games such as Minecraft, Limbus Company and Counter Strike: Global Offensive.
+This will print the number of games, list all games, rate Minecraft, add play time to Minecraft, and print the updated game information.
+
+The user can look at the terminal to see the result.
