@@ -58,6 +58,18 @@ public class GameLibraryApp
         library.rateGame(title, rating);
     }
 
+    private void startSession()
+    {
+        System.out.print("Enter game title: ");
+        String title = scanner.nextLine();
+
+        System.out.print("Enter minutes played: ");
+        double minutes = scanner.nextDouble();
+        scanner.nextLine();
+
+        library.startSession(title, minutes);
+    }
+
     public GameLibrary getLibrary()
     {
         return library;
