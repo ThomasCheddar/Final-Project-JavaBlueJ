@@ -70,6 +70,27 @@ public class GameLibraryApp
         library.startSession(title, minutes);
     }
 
+    private void addNewGame()
+    {
+        System.out.print("Enter title: ");
+        String title = scanner.nextLine();
+
+        System.out.println("Choose genre: ACTION, ADVENTURE, SPORTS, PUZZLE");
+        Genre genre = Genre.valueOf(scanner.nextLine().toUpperCase());
+
+        System.out.println("Choose platform: PC, PLAYSTATION, XBOX, SWITCH");
+        Platform platform = Platform.valueOf(scanner.nextLine().toUpperCase());
+
+        System.out.println("Choose age rating: EVERYONE, TEEN, MATURE");
+        AgeRating ageRating = AgeRating.valueOf(scanner.nextLine().toUpperCase());
+
+        System.out.println("Choose game type: SINGLEPLAYER, MULTIPLAYER, ONLINE");
+        GameType gameType = GameType.valueOf(scanner.nextLine().toUpperCase());
+
+        Game game = new Game(title, genre, platform, ageRating, gameType);
+        library.addGame(game);
+    }
+
     public GameLibrary getLibrary()
     {
         return library;
