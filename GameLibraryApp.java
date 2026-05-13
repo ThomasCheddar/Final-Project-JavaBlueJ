@@ -27,12 +27,54 @@ public class GameLibraryApp
         app.run();
     }
 
+
     public void run()
     {
+        int choice = -1;
 
+        while(choice != 0) {
+            printMenu();
+
+            choice = scanner.nextInt();
+            scanner.nextLine();
+
+            switch(choice) {
+                case 1:
+                    library.printLibraryDetails();
+                    break;
+
+                case 2:
+                    library.listAllGames();
+                    break;
+
+                case 3:
+                    rateGame();
+                    break;
+
+                case 4:
+                    startSession();
+                    break;
+
+                case 5:
+                    library.printSessionLog();
+                    break;
+                
+                case 6:
+                    addNewGame();
+                    break;
+
+                case 0:
+                    System.out.println("Goodbye.");
+                    break;
+
+                default:
+                    System.out.println("Invalid choice.");
+                    break;
+            }
+        }
     }
 
-    public void printMenu()
+    private void printMenu()
     {
         System.out.println();
         System.out.println("Game Library Menu");
@@ -41,7 +83,7 @@ public class GameLibraryApp
         System.out.println("3. Rate a game");
         System.out.println("4. Start a game session");
         System.out.println("5. Print game session log");
-        System.out.println("6. Add your own game");
+        System.out.println("6. Add a new game");
         System.out.println("0. Exit");
         System.out.print("Choice: ");
     }
@@ -89,15 +131,5 @@ public class GameLibraryApp
 
         Game game = new Game(title, genre, platform, ageRating, gameType);
         library.addGame(game);
-    }
-
-    public GameLibrary getLibrary()
-    {
-        return library;
-    }
-
-    public void setLibrary(GameLibrary library)
-    {
-        this.library = library;
     }
 }
