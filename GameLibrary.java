@@ -15,7 +15,6 @@ public class GameLibrary
         games = new ArrayList<Game>();
     }
 
-    
     public void addGame(Game game)
     {
         if(game !=null)
@@ -75,9 +74,22 @@ public class GameLibrary
         return null;
     }
 
+    public void removeGame(String title)
+    {
+        Game game = findGame(title);
+
+        if(game != null)
+        {
+            games.remove(game);
+            System.out.println("Game removed.");
+        } else {
+            System.out.println("Game not found.");
+        }
+    }
+
 
     public String toString()
     {
-       return "Game library with " + games.size() + "games.";
+        return "Game library with " + games.size() + "games.";
     }
 }
