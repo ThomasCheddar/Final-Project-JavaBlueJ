@@ -21,7 +21,7 @@ public class GameLibraryApp
 
     }
 
-    public static void Main(String[] args)
+    public static void main(String[] args)
     {
         GameLibraryApp app = new GameLibraryApp();
         app.run();

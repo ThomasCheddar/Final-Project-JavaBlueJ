@@ -18,8 +18,9 @@ HOW TO START THIS PROJECT:
 2. Click the compile button
 3. Right-click the GameLibraryApp class.
 4. Choose void Main(String[] args)
-5. Click OK
-6. Output will appear in the terminal
+5. Write { }
+6. Click OK
+7. Output will appear in the terminal
 
 AUTHORS:    
 Nicolas - GameLibraryApp, Game and GameLibrary
