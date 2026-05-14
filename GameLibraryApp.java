@@ -31,6 +31,7 @@ public class GameLibraryApp
     public void run()
     {
         int choice = -1;
+        scanner = new Scanner( System.in);
 
         while(choice != 0) {
             printMenu();
